@@ -1,6 +1,6 @@
 # azure-bootcamp-aks-selenium-grid
 
-Create AKS Cluster using Azure-CLI
+##Create AKS Cluster using Azure-CLI
 Open powershell or whatever terminal you prefer, login to Azure: 
 
 $ az login
