@@ -13,6 +13,10 @@ $ az group create -g Selenium -l "eastus"
 
 $ az aks create -g Selenium -n k8s-grid
 
+#To Create cluster in Azure Cloud Shell 
+
+$ az aks create -g Selenium -n k8s-grid --generate-ssh-keys
+
 # Now connect to the cluster specifying the Resource Group and Cluster name we gave in a previous step:
 
 $ az aks get-credentials --resource-group Selenium --name k8s-grid
@@ -46,6 +50,9 @@ kubectl create -f .\selenium-node-chrome-deployment.yaml
 
 Firefox
 kubectl create -f .\selenium-node-firefox-deployment.yaml 
+
+# To check the Pods
+$ kubectl get pods
 
 # Scaling the Grid
 We can scale by replicating nodes and have them sit idle:
